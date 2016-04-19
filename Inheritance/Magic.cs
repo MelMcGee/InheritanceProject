@@ -23,7 +23,10 @@ namespace Inheritance
 
         //let's throw in the level of expertise the fortune teller needs to use this item
         protected virtual string Expertise { get; set; }
-        
+
+        public override decimal Price { get; set; }
+        public override string Result { get; set; }
+
         //How about a  work -- "make it go now" method?
         public virtual void Work()
         {

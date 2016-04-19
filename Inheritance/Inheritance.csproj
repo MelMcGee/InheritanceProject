@@ -45,7 +45,9 @@
   <ItemGroup>
     <Compile Include="CrystalBall.cs" />
     <Compile Include="FortuneTeller.cs" />
+    <Compile Include="IRandomPhrase.cs" />
     <Compile Include="Magic.cs" />
+    <Compile Include="PalmReading.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service.cs" />

@@ -26,12 +26,27 @@ namespace Inheritance
             
         }
 
+        internal void ListServices()
+        {
+            //throw new NotImplementedException();
+            int counter = 1;
+            Console.WriteLine("Choose from any of my available magic services (Enter the number):");
+
+            foreach (Magic AvailableService in Program.AvailableServices)
+            {
+                Console.WriteLine("{0} - {1}", counter++, AvailableService);
+            }
+        }
+
         public void StartService(Service service)
         {
             Console.WriteLine("For you, my {0}! Yes, perfect. It only costs {1} and that's fine by everyone.", service.Name, service.Price);
         }
         
-            
+        public void PlayAgain()
+        {
+            Console.WriteLine("Would you like to play again? (Y/N)");
+        }    
 
         public void Farewell()
         {
